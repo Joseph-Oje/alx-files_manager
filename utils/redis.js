@@ -3,7 +3,10 @@ import redis from 'redis';
 class RedisClient {
   constructor() {
     // Create a Redis client
-    this.client = redis.createClient();
+    this.client = redis.createClient({
+      host: '127.0.0.1',
+      port: 6379
+    });
 
     // Log any errors from the Redis client to the console
     this.client.on('error', (error) => {
@@ -12,9 +15,9 @@ class RedisClient {
   }
 
   isAlive() {
-    // Check if the Redis client is connected to the server
     return this.client.connected;
   }
+
 
   async get(key) {
     // Use the Redis client to get the value for the specified key
