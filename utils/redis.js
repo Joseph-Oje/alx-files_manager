@@ -1,4 +1,4 @@
-import redis from "redis";
+import redis from 'redis';
 
 class RedisClient {
   constructor() {
@@ -6,8 +6,8 @@ class RedisClient {
     this.client = redis.createClient();
 
     // Log any errors from the Redis client to the console
-    this.client.on("error", (error) => {
-      console.error("Redis error:", error);
+    this.client.on('error', (error) => {
+      console.error('Redis error:', error);
     });
   }
 
@@ -32,7 +32,7 @@ class RedisClient {
   async set(key, value, duration) {
     // Use the Redis client to set the value for the specified key with an expiration time
     return new Promise((resolve, reject) => {
-      this.client.set(key, value, "EX", duration, (error) => {
+      this.client.set(key, value, 'EX', duration, (error) => {
         if (error) {
           reject(error);
         } else {
