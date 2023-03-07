@@ -5,7 +5,7 @@ class RedisClient {
     // Create a Redis client
     this.client = redis.createClient({
       host: '127.0.0.1',
-      port: 6379
+      port: 6379,
     });
 
     // Log any errors from the Redis client to the console
@@ -17,7 +17,6 @@ class RedisClient {
   isAlive() {
     return this.client.connected;
   }
-
 
   async get(key) {
     // Use the Redis client to get the value for the specified key
