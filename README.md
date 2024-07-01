@@ -34,5 +34,5 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 - how to setup and use a background worker
 
 ## Authors
-- Yidnekachew Bantrga - [Github](https://github.com/Yidne21) | [LinkedIn](https://www.linkedin.com/in/yidnekachew-bantrga-801376234/)
-- Milkias Yeheyis- [Github](https://github.com/milkias17) | [LinkedIn](https://www.linkedin.com/in/milkias-yeheyis-287284230/)
+- Joseph Oluwafemi Oje - [Github](https://github.com/Joseph-Oje)
+
